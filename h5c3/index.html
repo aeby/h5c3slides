@@ -34,7 +34,54 @@
 <body class="deck-container">
 
 <section class="slide" id="title-slide">
-	<h1>Getting Started with deck.js</h1>
+    <hgroup class="title">
+	   <h1>HTML5 und CSS3</h1>
+	   <h3>die nächste Stufe der Webentwicklung ist gezündet</h3>
+	</hgroup>
+	<footer style="text-align: right;">
+        Reto Aebersold <br />
+        Atizo AG <br />
+        Internet Briefing  12.2011
+	</footer>
+</section>
+
+<section style="display:-webkit-box; -webkit-box-align:center;" class="slide" id="html5-features">
+    <img src="html5features.jpg" />
+</section>
+
+<section style="display:-webkit-box; -webkit-box-align:center;" class="slide" id="feature-tags">
+    <img src="h5tags.png" />
+</section>
+
+<section class="slide" id="html5-readiness">
+    <h2>html5readiness.com</h2>
+    <img src="html5readiness.png" />
+</section>
+
+<section style="display:-webkit-box; -webkit-box-align:center;" class="slide" id="browsers">
+    <img src="browsers.png" />
+</section>
+
+<section class="slide" id="browsers">
+    <img src="chrome-transition.png" />
+    <img src="internet-explorer-transition.png" />
+</section>
+
+<section class="slide" id="html5-features">
+    <h2>Fehlertoleranz</h2>
+    <ul>
+        <li class="slide" id="extensions-goto">
+            Graceful degradation
+        </li>
+        
+        <li class="slide" id="extensions-hash">
+            Progressive enhancement
+        </li>
+
+        <li class="slide" id="extensions-menu">
+            Regressive enhancement
+        </li>       
+    </ul>
 </section>
 
 <section class="slide" id="how-to-overview">
@@ -166,12 +213,6 @@
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
 <a href="#" class="deck-next-link" title="Next">&#8594;</a>
 
-<p class="deck-status">
-	<span class="deck-status-current"></span>
-	/
-	<span class="deck-status-total"></span>
-</p>
-
 <form action="." method="get" class="goto-form">
 	<label for="goto-slide">Go to slide:</label>
 	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
@@ -191,7 +232,6 @@
 <script src="../extensions/hash/deck.hash.js"></script>
 <script src="../extensions/menu/deck.menu.js"></script>
 <script src="../extensions/goto/deck.goto.js"></script>
-<script src="../extensions/status/deck.status.js"></script>
 <script src="../extensions/navigation/deck.navigation.js"></script>
 
 <!-- Specific to this page -->

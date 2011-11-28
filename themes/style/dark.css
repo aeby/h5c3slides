@@ -1,11 +1,15 @@
 @import url(http://fonts.googleapis.com/css?family=Signika:400,700);
+section {
+  /*background-color: #121634;*/ }
+
 .deck-container {
   color: #FFF;
   font-family: 'Signika', sans-serif;
   font-size: 1.25em;
-  background-color: #181818;
-  background-image: -webkit-linear-gradient(0, transparent 85%, rgba(0, 0, 0, 0.5) 15%);
-  background-size: 7px; }
+  background-color: #12171a;
+  background-image: -webkit-linear-gradient(0, transparent 85%, #0c1013 15%);
+  background-size: 7px;
+  width: 928px; }
   .deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
     font-family: 'Signika', sans-serif;
     background: -webkit-gradient(linear, left top, left bottom, from(#8fe2e8), to(#43b6cb));
@@ -156,3 +160,14 @@
       -webkit-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
       -moz-box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
       box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.5), 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset; }
+  .deck-container hgroup.title h1 {
+    left: auto;
+    right: auto;
+    top: auto;
+    position: inherit;
+    -webkit-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+    text-align: left;
+    padding: 0; }
