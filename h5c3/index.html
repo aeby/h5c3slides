@@ -7,7 +7,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	
-	<title>Getting Started with deck.js</title>
+	<title>HTML5 und CSS3 - Developers Guide</title>
 	
 	<meta name="description" content="A jQuery library for modern HTML presentations">
 	<meta name="author" content="Caleb Troughton">
@@ -25,8 +25,11 @@
 	<link rel="stylesheet" id="style-theme-link" href="../themes/style/dark.css">
 	<link rel="stylesheet" id="transition-theme-link" href="../themes/transition/vertical-slide.css">
 	
+	<link href="css/shCoreRDark.css" rel="stylesheet" type="text/css" />
+    <link href="css/shThemeRDark.css" rel="stylesheet" type="text/css" />
+	
 	<!-- Custom CSS just for this page -->
-	<link rel="stylesheet" href="introduction.css">
+	<link rel="stylesheet" href="css/introduction.css">
 	
 	<script src="../modernizr.custom.js"></script>
 </head>
@@ -45,169 +48,169 @@
 	</footer>
 </section>
 
-<section style="display:-webkit-box; -webkit-box-align:center;" class="slide" id="html5-features">
-    <img src="html5features.jpg" />
+<section class="slide bcenter" id="html5-features">
+    <img src="img/html5features.jpg" />
 </section>
 
-<section style="display:-webkit-box; -webkit-box-align:center;" class="slide" id="feature-tags">
-    <img src="h5tags.png" />
+<section class="slide bcenter" id="feature-tags">
+    <img src="img/tagcloud.jpg" />
 </section>
 
 <section class="slide" id="html5-readiness">
     <h2>html5readiness.com</h2>
-    <img src="html5readiness.png" />
+    <img src="img/html5readiness.jpg" />
 </section>
 
-<section style="display:-webkit-box; -webkit-box-align:center;" class="slide" id="browsers">
-    <img src="browsers.png" />
+<section class="slide bcenter" id="browsers">
+    <img src="img/browsers.png" />
 </section>
 
-<section class="slide" id="browsers">
-    <img src="chrome-transition.png" />
-    <img src="internet-explorer-transition.png" />
+<section class="slide" id="transation">
+	<h2>Browser-Halbwertszeit</h2>
+    <img src="img/transistion.png" />
 </section>
 
-<section class="slide" id="html5-features">
+<section class="slide" id="chromeframe">
+	<h2>Chrome Frame</h2>
+	<pre class="brush: xml">
+		&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;
+	</pre>
+	
+    <pre class="brush: js">
+	<!--[if lt IE 7 ]>
+        <script src="//ajax.googleapis.com/CFInstall.min.js"></script>
+        <script>
+        window.attachEvent('onload',
+            function(){CFInstall.check({mode:'overlay'})}
+        )
+        </script>
+    <![endif]-->
+	</pre>	
+</section>
+
+<section class="slide" id="chromeframe-screen">
+    <h2>Chrome Frame</h2>
+    <img src="img/screenshot-chromeframe.png" />
+</section>
+
+<section class="slide" id="fault-tolerance">
     <h2>Fehlertoleranz</h2>
     <ul>
-        <li class="slide" id="extensions-goto">
-            Graceful degradation
+        <li class="slide" id="graceful-degradation">
+            <h3>Graceful degradation</h3>
+			<img src="img/tv-small-01.jpg">
         </li>
         
-        <li class="slide" id="extensions-hash">
-            Progressive enhancement
+        <li class="slide" id="progressive-enhancement">
+            <h3>Progressive enhancement</h3>
+			<img src="img/tv-small-02.jpg">
         </li>
 
-        <li class="slide" id="extensions-menu">
-            Regressive enhancement
+        <li class="slide" id="regressive-enhancement">
+            <h3>Regressive enhancement</h3>
+			<img src="img/tv-small-03.jpg">
         </li>       
     </ul>
 </section>
 
-<section class="slide" id="how-to-overview">
-	<h2>How to Make a Deck</h2>
-	<ol>
-		<li>
-			<h3>Write Slides</h3>
-			<p>Slide content is simple&nbsp;HTML.</p>
-		</li>
-		<li>
-			<h3>Choose Themes</h3>
-			<p>One for slide styles and one for deck&nbsp;transitions.</p>
-		</li>
-		<li>
-			<h3>Include Extensions</h3>
-			<p>Add extra functionality to your deck, or leave it stripped&nbsp;down.</p>
-		</li>
-	</ol>
+<section class="slide" id="dowebsitesneedtolookexactlythesame">
+    <h2>Gleicher Inhalt - Verschiedene Browser</h2>
+	<h3>dowebsitesneedtolookexactlythesameineverybrowser.com</h3>
+    <img src="img/no.jpg" />
 </section>
 
-<section class="slide" id="markup">
-	<h2>The Markup</h2>
-	<p>Slides are just HTML elements with a class of <code>slide</code>.</p>
-	<pre><code>&lt;section class=&quot;slide&quot;&gt;
-   &lt;h2&gt;How to Make a Deck&lt;/h2&gt;
-   &lt;ol&gt;
-      &lt;li&gt;
-         &lt;h3&gt;Write Slides&lt;/h3&gt;
-         &lt;p&gt;Slide content is simple HTML.&lt;/p&gt;
-      &lt;/li&gt;
-      &lt;li&gt;
-         &lt;h3&gt;Choose Themes&lt;/h3&gt;
-         &lt;p&gt;One for slide styles and one for deck transitions.&lt;/p&gt;
-      &lt;/li&gt;
-      &hellip;
-   &lt;/ol&gt;
-&lt;/section&gt;</code></pre>
-</section>
+<section class="slide" id="same-same-different">
+	<h2>Gleicher Inhalt - Verschiedene Browser</h2>
+    <ul>
+        <li class="slide" id="what-matters">
+            <h3>Mehr Zeit für das Wesentliche</h3>
+        </li>
+        
+        <li class="slide" id="site-performance">
+            <h3>Verbesserte Performance der Seite</h3>
+        </li>
 
-<section class="slide" id="themes">
-	<h2>Style Themes</h2>
-	<p>Customizes the colors, typography, and layout of slide&nbsp;content.</p>
-	<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/style-theme.css&quot;&gt;</code></pre>
-	<h2>Transition Themes</h2>
-	<p>Defines transitions between slides using CSS3 transitions.  Less capable browsers fall back to cutaways. But <strong>you</strong> aren&rsquo;t using <em>those</em> browsers to give your presentations, are&nbsp;you&hellip;</p>
-	<pre><code>&lt;link rel=&quot;stylesheet&quot; href=&quot;/path/to/css/transition-theme.css&quot;&gt;</code></pre>
-</section>
-
-<section class="slide" id="extensions">
-	<h2>Extensions</h2>
-	<p>Core gives you basic slide functionality with left and right arrow navigation, but you may want more. Here are the ones included in this&nbsp;deck:</p>
-	
-	<ul>
-		<li class="slide" id="extensions-goto">
-			<strong>deck.goto</strong>: Adds a shortcut key to jump to any slide number.  Hit g, type in the slide number, and hit&nbsp;enter.
-		</li>
+        <li class="slide" id="search-engine">
+            <h3>Suchmaschinen mögen schnelle Seiten</h3>
+        </li>
 		
-		<li class="slide" id="extensions-hash">
-			<strong>deck.hash</strong>: Enables internal linking within slides, deep linking to individual slides, and updates the address bar &amp; a permalink anchor with each slide&nbsp;change.
-		</li>
-
-		<li class="slide" id="extensions-menu">
-			<strong>deck.menu</strong>: Adds a menu view, letting you see all slides in a grid. Hit m to toggle to menu view, continue navigating your deck, and hit m to return to normal view. Touch devices can double-tap the deck to switch between&nbsp;views.
-		</li>
-
-		<li class="slide" id="extensions-navigation">
-			<strong>deck.navigation</strong>: Adds clickable left and right buttons for the less keyboard&nbsp;inclined.
-		</li>
-
-		<li class="slide" id="extensions-status">
-			<strong>deck.status</strong>: Adds a page number indicator. (current/total)
-		</li>
-	</ul>
-	
-	<p class="slide" id="extension-folders">Each extension folder in the download package contains the necessary JavaScript, CSS, and HTML&nbsp;files. For a complete list of extension modules included in deck.js, check out the&nbsp;<a href="http://imakewebthings.github.com/deck.js/docs">documentation</a>.</p>
+		<li class="slide" id="future-proof">
+            <h3>Zukunftssicherer</h3>
+        </li>
+		
+		<li class="slide" id="audience-hate">
+            <h3>Meine Besucher werden die Seite nicht mögen!</h3>
+        </li>
+    </ul>
 </section>
 
-<section class="slide" id="nested">
-	<h2>Nested Slides</h2>
-	<p>That last slide had a few steps.  To create substeps in slides, just nest them:</p>
-	<pre><code>&lt;section class=&quot;slide&quot;&gt;
-  &lt;h2&gt;Extensions&lt;/h2&gt;
-  &lt;p&gt;Core gives you basic slide functionality...&lt;/p&gt;		
-  &lt;ul&gt;
-     &lt;li class=&quot;slide&quot;&gt;
-        &lt;h3&gt;deck.goto&lt;/h3&gt;
-        &lt;p&gt;Adds a shortcut key to jump to any slide number...&lt;/p&gt;
-     &lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;	
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-     &lt;li class=&quot;slide&quot;&gt;...&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/section&gt;</code></pre>
+<section class="slide" id="glue-sniffing">
+    <h2>SNIFFING USER AGENTS IS LIKE SNIFFING GLUE. ITS A VERY TEMPORARY FIX.</h2>
+	<p>- html5douche</p>
+    <img src="img/glue-sniffing.jpg" />
 </section>
 
-<section class="slide" id="elements-images">
-	<h2>Other Elements: Images</h2>
-	<img src="http://placekitten.com/600/375" alt="Kitties">
-	<pre><code>&lt;img src=&quot;http://placekitten.com/600/375&quot; alt=&quot;Kitties&quot;&gt;</code></pre>
+<section class="slide bcenter" id="modernizr">
+    <img src="img/modernizrlogo.png">
 </section>
 
-<section class="slide" id="elements-blockquotes">
-	<h2>Other Elements: Blockquotes</h2>
-	<blockquote cite="http://example.org">
-		<p>Food is an important part of a balanced diet.</p>
-		<p><cite>Fran Lebowitz</cite></p>
-	</blockquote>
-	<pre><code>&lt;blockquote cite=&quot;http://example.org&quot;&gt;
-  &lt;p&gt;Food is an important part of a balanced diet.&lt;/p&gt;
-  &lt;p&gt;&lt;cite&gt;Fran Lebowitz&lt;/cite&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</code></pre>
+<section class="slide" id="modernizr-features">
+	<h2>Ermitteln von nativen Browserfunktionen</h2>
+    <img src="img/modernizer_features.png">
 </section>
 
-
-<section class="slide" id="elements-videos">
-	<h2>Other Elements: Video Embeds</h2>
-	<p>Embed videos from your favorite online video service or with an HTML5 video&nbsp;element.</p>
-	
-	<iframe src="http://player.vimeo.com/video/1063136?title=0&amp;byline=0&amp;portrait=0" width="400" height="225" frameborder="0"></iframe>
-	
-	<pre><code>&lt;iframe src=&quot;http://player.vimeo.com/video/1063136?title=0&amp;amp;byline=0&amp;amp;portrait=0&quot; width=&quot;400&quot; height=&quot;225&quot; frameborder=&quot;0&quot;&gt;&lt;/iframe&gt;</code></pre>
+<section class="slide" id="modernizr-output">
+    <h2>Ermitteln von nativen Browserfunktionen</h2>
+    <pre class="brush: xml">
+        &lt;html class="js flexbox canvas canvastext webgl no-touch
+		geolocation postmessage websqldatabase indexeddb hashchange
+		history draganddrop	websockets rgba hsla multiplebgs backgroundsize
+		borderimage borderradius boxshadow textshadow opacity cssanimations
+		csscolumns cssgradients	cssreflections csstransforms csstransforms3d
+		csstransitions fontface	generatedcontent video audio localstorage
+		sessionstorage webworkers applicationcache svg inlinesvg smil
+		svgclippaths" lang="en"&gt;
+    </pre>
+	<img src="img/modernizr_obj.png">
 </section>
 
-<section class="slide" id="digging-deeper">
-	<h2>Digging Deeper</h2>
-	<p>If you want to learn about making your own themes, extending deck.js, and more, check out the&nbsp;<a href="../docs/">documentation</a>.</p>
+<section class="slide" id="modernizr-css-usage">
+    <h2>Ermitteln von nativen Browserfunktionen</h2>
+    <pre class="brush: css">
+        .csscolumns ol.features {
+		    -moz-column-count: 2;
+		    -webkit-columns: 2;
+		    -o-columns: 2;
+		    columns: 2;
+		}
+		.no-csscolumns ol.features {
+		    float: left;
+		    margin: 0 0 20px;
+		}
+		.no-csscolumns ol.features li {
+		    float: left;
+		    width: 180px;
+		}
+    </pre>
+</section>
+
+<section class="slide" id="thanks-for-the-fish">
+    <h1>Vielen Dank!</h1>
+</section>
+
+<section class="slide" id="bibliography">
+    <h2>Quellen</h2>
+    <ol>
+        <li>
+            Browser adoption - <a href="http://arstechnica.com/web/news/2011/08/july-browser-stats-windows-xp-loses-its-majority-share-of-web-users.ars">arstechnica</a>
+        </li>
+        <li>
+            Where are my round corners? - <a href="http://boagworld.com/design/where-are-my-rounded-corners/">boagworld</a>
+        </li>
+        <li>
+            Glue sniffing bear - <a href="http://www.flickr.com/photos/akeg/3457457546/">Eric Schmuttenmaer</a>
+        </li>
+    </ol>
 </section>
 
 <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
@@ -234,8 +237,14 @@
 <script src="../extensions/goto/deck.goto.js"></script>
 <script src="../extensions/navigation/deck.navigation.js"></script>
 
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushJScript.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript" src="js/shBrushCss.js"></script>
+
 <!-- Specific to this page -->
-<script src="introduction.js"></script>
+<script src="js/introduction.js"></script>
 
 </body>
 </html>
