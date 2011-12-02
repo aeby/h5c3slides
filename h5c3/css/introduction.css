@@ -1,3 +1,19 @@
 section.bcenter {
   display: -webkit-box;
   -webkit-box-align: center; }
+
+section#title-slide {
+  position: relative; }
+  section#title-slide hgroup {
+    padding-top: 90px; }
+    section#title-slide hgroup h1 {
+      font-size: 112px; }
+  section#title-slide footer {
+    padding-top: 120px; }
+
+table.nice {
+  width: 80%; }
+  table.nice td {
+    padding: 7px 0px 7px 11px; }
+  table.nice tr.odd td {
+    background-color: rgba(143, 226, 232, 0.2); }

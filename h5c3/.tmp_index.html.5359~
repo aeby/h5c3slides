@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	
+	<title>HTML5 und CSS3 - Developers Guide</title>
+	
+	<meta name="description" content="A jQuery library for modern HTML presentations">
+	<meta name="author" content="Caleb Troughton">
+	<meta name="viewport" content="width=1024, user-scalable=no">
+	
+	<!-- Core and extension CSS files -->
+	<link rel="stylesheet" href="../core/deck.core.css">
+	<link rel="stylesheet" href="../extensions/goto/deck.goto.css">
+	<link rel="stylesheet" href="../extensions/menu/deck.menu.css">
+	<link rel="stylesheet" href="../extensions/navigation/deck.navigation.css">
+	<link rel="stylesheet" href="../extensions/status/deck.status.css">
+	<link rel="stylesheet" href="../extensions/hash/deck.hash.css">
+	
+	<!-- Theme CSS files (menu swaps these out) -->
+	<link rel="stylesheet" id="style-theme-link" href="../themes/style/dark.css">
+	<link rel="stylesheet" id="transition-theme-link" href="../themes/transition/vertical-slide.css">
+	
+	<link href="css/shCoreRDark.css" rel="stylesheet" type="text/css" />
+    <link href="css/shThemeRDark.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Custom CSS just for this page -->
+	<link rel="stylesheet" href="css/introduction.css">
+	
+	<script src="../modernizr.custom.js"></script>
+</head>
+
+<body class="deck-container">
+
+<section class="slide" id="title-slide">
+    <hgroup class="title">
+	   <h1>HTML5 und CSS3</h1>
+	   <h3>die nächste Stufe der Webentwicklung ist gezündet</h3>
+	</hgroup>
+	<footer style="text-align: right;">
+        Reto Aebersold <br />
+        Atizo AG <br />
+        Internet Briefing  12.2011
+	</footer>
+</section>
+
+<section class="slide bcenter" id="html5-features">
+    <img src="img/html5features.jpg" />
+</section>
+
+<section class="slide bcenter" id="feature-tags">
+    <img src="img/tagcloud.jpg" />
+</section>
+
+<section class="slide bcenter" id="html5-case1">
+    <img src="img/ft_app.png" />
+</section>
+
+<section class="slide bcenter" id="html5-case2">
+    <img src="img/at_app.jpg" />
+</section>
+
+
+<section class="slide" id="html5-readiness">
+    <h2>html5readiness.com</h2>
+    <img src="img/html5readiness.jpg" />
+</section>
+
+<section class="slide bcenter" id="browsers">
+    <img src="img/browsers.png" />
+</section>
+
+<section class="slide" id="transation">
+	<h2>Browser-Halbwertszeit</h2>
+	<ul>
+        <li class="slide" id="transation-ie"><img src="img/transistion-ie.png" /></li>
+		<li class="slide" id="transation-chrome"><img src="img/transistion-chrome.png" /></li>
+	</ul>
+    
+</section>
+
+<section class="slide" id="chromeframe">
+	<h2>Chrome Frame</h2>
+	<pre class="brush: xml">
+		&lt;meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"&gt;
+	</pre>
+	
+    <pre class="brush: js">
+	<!--[if lt IE 7 ]>
+        <script src="//ajax.googleapis.com/CFInstall.min.js"></script>
+        <script>
+        window.attachEvent('onload',
+            function(){CFInstall.check({mode:'overlay'})}
+        )
+        </script>
+    <![endif]-->
+	</pre>	
+</section>
+
+<section class="slide" id="chromeframe-screen">
+    <h2>Chrome Frame</h2>
+    <img src="img/screenshot-chromeframe.png" />
+</section>
+
+<section class="slide" id="fault-tolerance">
+    <h2>Fehlertoleranz</h2>
+    <ul>
+        <li class="slide" id="graceful-degradation">
+            <h3>Graceful degradation</h3>
+			<img src="img/tv-small-01.jpg">
+        </li>
+        
+        <li class="slide" id="progressive-enhancement">
+            <h3>Progressive enhancement</h3>
+			<img src="img/tv-small-02.jpg">
+        </li>
+
+        <li class="slide" id="regressive-enhancement">
+            <h3>Regressive enhancement</h3>
+			<img src="img/tv-small-03.jpg">
+        </li>       
+    </ul>
+</section>
+
+<section class="slide" id="dowebsitesneedtolookexactlythesame">
+    <h2>Gleicher Inhalt - Verschiedene Browser</h2>
+	<h3>dowebsitesneedtolookexactlythesameineverybrowser.com</h3>
+    <img src="img/no.jpg" />
+</section>
+
+<section class="slide" id="same-same-different">
+	<h2>Gleicher Inhalt - Verschiedene Browser</h2>
+    <ul>
+        <li class="slide" id="what-matters">
+            <h3>Mehr Zeit für das Wesentliche</h3>
+        </li>
+        
+        <li class="slide" id="site-performance">
+            <h3>Verbesserte Performance der Seite</h3>
+        </li>
+
+        <li class="slide" id="search-engine">
+            <h3>Suchmaschinen mögen schnelle Seiten</h3>
+        </li>
+		
+		<li class="slide" id="future-proof">
+            <h3>Zukunftssicherer</h3>
+        </li>
+		
+		<li class="slide" id="audience-hate">
+            <h3>Meine Besucher werden die Seite nicht mögen!</h3>
+        </li>
+    </ul>
+</section>
+
+<section class="slide" id="glue-sniffing">
+    <h2>SNIFFING USER AGENTS IS LIKE SNIFFING GLUE. ITS A VERY TEMPORARY FIX.</h2>
+	<p>- html5douche</p>
+    <img src="img/glue-sniffing.jpg" />
+</section>
+
+<section class="slide bcenter" id="modernizr">
+    <img src="img/modernizrlogo.png">
+</section>
+
+<section class="slide" id="modernizr-features">
+	<h2>Ermitteln von nativen Browserfunktionen</h2>
+    <img src="img/modernizer_features.png">
+</section>
+
+<section class="slide" id="modernizr-output">
+    <h2>Ermitteln von nativen Browserfunktionen</h2>
+    <pre class="brush: xml">
+        &lt;html class="js flexbox canvas canvastext webgl no-touch
+		geolocation postmessage websqldatabase indexeddb hashchange
+		history draganddrop	websockets rgba hsla multiplebgs backgroundsize
+		borderimage borderradius boxshadow textshadow opacity cssanimations
+		csscolumns cssgradients	cssreflections csstransforms csstransforms3d
+		csstransitions fontface	generatedcontent video audio localstorage
+		sessionstorage webworkers applicationcache svg inlinesvg smil
+		svgclippaths" lang="en"&gt;
+    </pre>
+	<img src="img/modernizr_obj.png">
+</section>
+
+<section class="slide" id="modernizr-css-usage">
+    <h2>Modernizr - CSS</h2>
+    <pre class="brush: css">
+        .csscolumns ol.features {
+		    -moz-column-count: 2;
+		    -webkit-columns: 2;
+		    -o-columns: 2;
+		    columns: 2;
+		}
+		.no-csscolumns ol.features {
+		    float: left;
+		    margin: 0 0 20px;
+		}
+		.no-csscolumns ol.features li {
+		    float: left;
+		    width: 180px;
+		}
+    </pre>
+</section>
+
+<section class="slide" id="modernizr-js-usage">
+    <h2>Modernizr - JS</h2>
+    <pre class="brush: js">
+        if(Modernizr.geolocation){
+            navigator.geolocation.getCurrentPosition(success, error);
+		}else{
+            getIPLocation(success, error);
+		}
+    </pre>
+</section>
+
+<section class="slide" id="thanks-for-the-fish">
+    <h1>Vielen Dank!</h1>
+</section>
+
+<section class="slide" id="bibliography">
+    <h2>Quellen</h2>
+    <ol>
+        <li>
+            Browser adoption - <a href="http://arstechnica.com/web/news/2011/08/july-browser-stats-windows-xp-loses-its-majority-share-of-web-users.ars">arstechnica</a>
+        </li>
+        <li>
+            Where are my round corners? - <a href="http://boagworld.com/design/where-are-my-rounded-corners/">boagworld</a>
+        </li>
+        <li>
+            Glue sniffing bear - <a href="http://www.flickr.com/photos/akeg/3457457546/">Eric Schmuttenmaer</a>
+        </li>
+    </ol>
+</section>
+
+<a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
+<a href="#" class="deck-next-link" title="Next">&#8594;</a>
+
+<form action="." method="get" class="goto-form">
+	<label for="goto-slide">Go to slide:</label>
+	<input type="text" name="slidenum" id="goto-slide" list="goto-datalist">
+	<datalist id="goto-datalist"></datalist>
+	<input type="submit" value="Go">
+</form>
+
+<a href="." title="Permalink to this slide" class="deck-permalink">#</a>
+
+
+  <!-- Grab CDN jQuery, with a protocol relative URL; fall back to local if offline -->
+  <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../jquery-1.7.min.js"><\/script>')</script>
+
+<!-- Deck Core and extensions -->
+<script src="../core/deck.core.js"></script>
+<script src="../extensions/hash/deck.hash.js"></script>
+<script src="../extensions/menu/deck.menu.js"></script>
+<script src="../extensions/goto/deck.goto.js"></script>
+<script src="../extensions/navigation/deck.navigation.js"></script>
+
+<script type="text/javascript" src="js/XRegExp.js"></script>
+<script type="text/javascript" src="js/shCore.js"></script>
+<script type="text/javascript" src="js/shBrushJScript.js"></script>
+<script type="text/javascript" src="js/shBrushXml.js"></script>
+<script type="text/javascript" src="js/shBrushCss.js"></script>
+
+<!-- Specific to this page -->
+<script src="js/introduction.js"></script>
+
+</body>
+</html>

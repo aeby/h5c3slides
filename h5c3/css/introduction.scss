@@ -2,3 +2,32 @@ section.bcenter{
     display:-webkit-box;
     -webkit-box-align:center;
 }
+
+section#title-slide{
+    position: relative;
+    
+    hgroup{
+        padding-top: 90px;
+        
+        h1{
+            font-size: 112px;
+        }        
+    }
+    
+    footer{
+        padding-top:120px;
+    }
+}
+
+table.nice{
+    width: 80%;   
+    td{
+        padding: 7px 0px 7px 11px;
+    }
+    
+    tr.odd{
+        td{
+            background-color: rgba(143,226,232, 0.2);
+        }
+    }
+}
