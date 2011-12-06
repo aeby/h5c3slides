@@ -18,7 +18,7 @@ section {
   .deck-container .slide h2 {
     border-bottom: 0; }
     .cssreflections .deck-container .slide h2 {
-      line-height: 1;
+      line-height: 1.2;
       -webkit-box-reflect: below -0.556em -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.3, transparent), color-stop(0.7, rgba(255, 255, 255, 0.1)), to(transparent));
       -moz-box-reflect: below -0.556em -moz-linear-gradient(top, transparent 0%, transparent 30%, rgba(255, 255, 255, 0.3) 100%); }
   .deck-container .slide h3 {
@@ -117,7 +117,7 @@ section {
       top: 0;
       left: 0;
       font-size: 5em;
-      line-height: 1;
+      line-height: 1.2;
       color: #ccf0f0;
       z-index: 1; }
   .deck-container .slide ::-moz-selection {
