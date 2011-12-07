@@ -1,6 +1,11 @@
 section.bcenter {
+  display: -moz-box;
+  -moz-box-orient: horizontal;
+  -moz-box-align: center;
   display: -webkit-box;
-  -webkit-box-align: center; }
+  -webkit-box-align: center;
+  display: box;
+  box-align: center; }
 
 section#title-slide {
   position: relative; }
@@ -17,3 +22,10 @@ table.nice {
     padding: 7px 0px 7px 11px; }
   table.nice tr.odd td {
     background-color: rgba(143, 226, 232, 0.2); }
+
+ul.img {
+  list-style: none; }
+  ul.img li {
+    padding: 0; }
+    ul.img li img {
+      margin: 0; }

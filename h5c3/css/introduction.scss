@@ -1,6 +1,14 @@
 section.bcenter{
-    display:-webkit-box;
+
+    display: -moz-box;
+    -moz-box-orient:horizontal;
+    -moz-box-align:center;
+
+    display: -webkit-box;
     -webkit-box-align:center;
+
+    display:box;
+    box-align:center;
 }
 
 section#title-slide{
@@ -29,5 +37,18 @@ table.nice{
         td{
             background-color: rgba(143,226,232, 0.2);
         }
+    }
+}
+
+ul.img{
+    list-style: none;
+    
+    li{
+        padding: 0;
+        
+        img{
+            margin: 0;
+        }
+        
     }
 }

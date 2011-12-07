@@ -8,13 +8,19 @@ section {
   font-size: 1.25em;
   background-color: #12171a;
   background-image: -webkit-linear-gradient(0, transparent 85%, #0c1013 15%);
+  background-image: -moz-linear-gradient(0, transparent 85%, #0c1013 15%);
+  background-image: -ms-linear-gradient(0, transparent 85%, #0c1013 15%);
+  background-image: -o-linear-gradient(0, transparent 85%, #0c1013 15%);
+  background-image: linear-gradient(0, transparent 85%, #0c1013 15%);
   background-size: 7px;
   width: 928px; }
   .deck-container .slide h1, .deck-container .slide h2, .deck-container .slide h3, .deck-container .slide h4, .deck-container .slide h5, .deck-container .slide h6 {
     font-family: 'Signika', sans-serif;
+    color: #8fe2e8;
     background: -webkit-gradient(linear, left top, left bottom, from(#8fe2e8), to(#43b6cb));
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; }
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent; }
   .deck-container .slide h2 {
     border-bottom: 0; }
     .cssreflections .deck-container .slide h2 {

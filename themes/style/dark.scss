@@ -32,6 +32,10 @@ section{
 	font-size:1.25em;
 	background-color: #12171a;
     background-image: -webkit-linear-gradient(0, transparent 85%, rgba(12,16,19,1) 15%);
+    background-image: -moz-linear-gradient(0, transparent 85%, rgba(12,16,19,1) 15%);
+    background-image: -ms-linear-gradient(0, transparent 85%, rgba(12,16,19,1) 15%);
+    background-image: -o-linear-gradient(0, transparent 85%, rgba(12,16,19,1) 15%);
+    background-image: linear-gradient(0, transparent 85%, rgba(12,16,19,1) 15%);
     background-size: 7px;
     width: 928px;
 	
@@ -40,11 +44,13 @@ section{
 	}
 	
 	.slide {
-		h1, h2, h3, h4, h5, h6 {
+		h1, h2, h3, h4, h5, h6 { 
 			font-family: 'Signika', sans-serif;
+			color: #8fe2e8;
 			background: -webkit-gradient(linear, left top, left bottom, from(#8fe2e8), to(#43b6cb));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            text-fill-color: transparent;
 		}
 
 		h1 {
